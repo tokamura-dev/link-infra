@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `link-ses-db`.`users` (
   prefecture VARCHAR(4),
   municipalities VARCHAR(100),
   building VARCHAR(100),
+  delete_flg INT NOT NULL,
   created_author VARCHAR(60) NOT NULL,
   created_date DATETIME NOT NULL,
   updated_author VARCHAR(60),
