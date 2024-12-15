@@ -17,7 +17,8 @@ CREATE TABLE IF NOT EXISTS `link-ses-db`.`users` (
   building VARCHAR(100),
   delete_flg INT NOT NULL,
   created_author VARCHAR(60) NOT NULL,
-  created_date DATETIME NOT NULL,
+  created_datetime DATETIME NOT NULL,
   updated_author VARCHAR(60),
-  updated_date DATETIME
+  updated_datetime DATETIME,
+  FOREIGN KEY (employee_id) REFERENCES logins(employee_id)
 )
